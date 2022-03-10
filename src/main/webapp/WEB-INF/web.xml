@@ -12,7 +12,28 @@
   <servlet>
     <servlet-name>SignupServlet</servlet-name>
     <servlet-class>com.controller.SignupServlet</servlet-class>
+    <init-param>
+    	<param-name>email</param-name>
+    	<param-value>admin@gmail.com</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>password</param-name>
+    	<param-value>admin</param-value>
+    </init-param>
+    <!-- it is use for particular servlet -->
   </servlet>
+  
+  <context-param>
+  	<param-name>email</param-name>
+  	<param-value>admin@admin.com</param-value>
+  </context-param>
+  <!-- if the key is same it will be overrided -->
+  <context-param>
+  	<param-name>password</param-name>
+  	<param-value>admin1234</param-value>
+  </context-param>
+  
+  
   <servlet-mapping>
     <servlet-name>SignupServlet</servlet-name>
     <url-pattern>/SignupServlet</url-pattern>
@@ -83,6 +104,7 @@
     <servlet-name>SearchProjectServletDB</servlet-name>
     <url-pattern>/SearchProjectServletDB</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <description></description>
     <display-name>UpdateServletDB</display-name>
