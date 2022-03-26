@@ -27,7 +27,7 @@
 		</c:otherwise>
 	</c:choose>
 	
-	<c:forEach begin="1" end="10" var="i">
+	<c:forEach begin="1" end="10" var="i" step="2"><!-- increment of two element -->
 		<c:out value="${i}"></c:out>
 	</c:forEach>
 	
