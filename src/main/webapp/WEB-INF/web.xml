@@ -164,6 +164,12 @@
   	
   <listener><listener-class>com.listner.UserCounter</listener-class></listener>
   
+  <jsp-config>
   
+  	<taglib>
+  		<taglib-uri>stag</taglib-uri>
+  		<taglib-location>/WEB-INF/stag.tld</taglib-location>
+  	</taglib>
+  </jsp-config>
   
 </web-app>

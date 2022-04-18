@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1" is%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <!DOCTYPE html>
 <html>
@@ -43,5 +43,13 @@
 	
 	
 	<c:import url="Signup.html"></c:import>
+	
+	<%-- <jsp:element name="book">
+		<jsp:attribute name="author">bala</jsp:attribute>
+		<jsp:body>nice</jsp:body>
+	</jsp:element>
+	<book author="bala">
+	</book> --%>
+	
 </body>
 </html>

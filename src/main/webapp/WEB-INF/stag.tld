@@ -1,0 +1,21 @@
+<taglib>
+	<tlib-version>1</tlib-version>
+	<jsp-version>2</jsp-version>
+	
+	<tag>
+		<name>greet</name>
+		<tag-class>com.stag.GreetTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>sqr</name>
+		<tag-class>com.stag.SqareTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>num</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+</taglib>
